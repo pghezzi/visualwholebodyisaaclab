@@ -9,10 +9,10 @@ from collections import defaultdict
 from .reward_vec_task import RewardVecTask
 from utils.low_level_model import ActorCritic
 
-from isaacgym import gymapi
-from isaacgym import gymtorch
-from isaacgym import gymutil
-from isaacgym.torch_utils import *
+from isaaclab import gymapi
+from isaaclab import gymtorch
+from isaaclab import gymutil
+from isaaclab.torch_utils import *
 from torch import Tensor
 from torchvision import transforms
 

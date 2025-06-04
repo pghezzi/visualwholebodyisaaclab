@@ -2,6 +2,7 @@ import numpy as np
 import os
 import torch
 import cv2
+import random
 from typing import Dict, Any, Tuple, List, Set
 from collections import defaultdict
 import wandb
@@ -9,12 +10,12 @@ import wandb
 from .b1z1_base import B1Z1Base, reindex_all, reindex_feet, LIN_VEL_X_CLIP, ANG_VEL_YAW_CLIP, torch_rand_int
 from utils.low_level_model import ActorCritic
 
-from isaacgym import gymapi
-from isaacgym import gymtorch
-from isaacgym import gymutil
-from isaacgym.torch_utils import *
+from isaaclab import gymapi
+from isaaclab import gymtorch
+from isaaclab import gymutil
+from isaaclab.torch_utils import *
 from torch import Tensor
-import torchvision.transforms as transforms
+from torchvision import transforms
 
 class B1Z1PickMulti(B1Z1Base):
     def __init__(self, table_height=None, *args, **kwargs):

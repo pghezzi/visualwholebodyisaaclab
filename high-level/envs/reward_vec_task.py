@@ -2,7 +2,8 @@ from .vec_task import VecTask
 import torch
 import torch.nn.functional as F
 import numpy as np
-from isaacgym.torch_utils import *
+from typing import Dict, Any, Tuple, List, Set
+from isaaclab.torch_utils import *
 
 class RewardVecTask(VecTask):
     # --------------------------------- reward functions ---------------------------------
