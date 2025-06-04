@@ -29,7 +29,7 @@
 
 import numpy as np
 from bisect import bisect
-from isaacgym import gymapi
+from isaaclab import gymapi
 
 
 def get_property_setter_map(gym):

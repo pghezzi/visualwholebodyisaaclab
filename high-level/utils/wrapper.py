@@ -213,7 +213,6 @@ class RSLWrapper(Wrapper):
         """Close the environment
         """
         pass
-
 class IsaacLabWrapper(Wrapper):
     def __init__(self, env: Any) -> None:
         """Isaac Lab environment wrapper
