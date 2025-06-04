@@ -48,7 +48,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/trunk.dae"
+        <mesh filename="../meshes_new/trunk.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -62,7 +62,7 @@
     <!-- <collision>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="../meshes/trunk.dae" scale="1 1
+                <mesh filename="../meshes_new/trunk.stl" scale="1 1
     1"/>
             </geometry>
         </collision> -->
@@ -110,7 +110,7 @@
     <visual>
       <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/hip.dae"
+        <mesh filename="../meshes_new/hip.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -141,7 +141,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/thigh_mirror.dae"
+          filename="../meshes_new/thigh_mirror.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -171,7 +171,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/calf.dae"
+        <mesh filename="../meshes_new/calf.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -226,7 +226,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/hip.dae"
+        <mesh filename="../meshes_new/hip.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -256,7 +256,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/thigh.dae"
+        <mesh filename="../meshes_new/thigh.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -286,7 +286,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/calf.dae"
+        <mesh filename="../meshes_new/calf.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -341,7 +341,7 @@
     <visual>
       <origin rpy="3.141592653589793 3.141592653589793 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/hip.dae"
+        <mesh filename="../meshes_new/hip.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -372,7 +372,7 @@
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/thigh_mirror.dae"
+          filename="../meshes_new/thigh_mirror.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -402,7 +402,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/calf.dae"
+        <mesh filename="../meshes_new/calf.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -457,7 +457,7 @@
     <visual>
       <origin rpy="0 3.141592653589793 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/hip.dae"
+        <mesh filename="../meshes_new/hip.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -487,7 +487,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/thigh.dae"
+        <mesh filename="../meshes_new/thigh.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -517,7 +517,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/calf.dae"
+        <mesh filename="../meshes_new/calf.stl"
           scale="1 1 1" />
       </geometry>
       <material name="orange" />
@@ -564,7 +564,7 @@
 
   <!-- Start of Z1 Links and Joints -->
   <joint name="base_static_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.3 0 0.09>>" />
+    <origin rpy="0 0 0" xyz="0.3 0 0.09" />
     <parent link="base" />
     <child link="link00" />
   </joint>
@@ -572,7 +572,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link00.dae"
+        <mesh filename="../meshes_new/z1_Link00.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -601,7 +601,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link01.dae"
+        <mesh filename="../meshes_new/z1_Link01.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -630,7 +630,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link02.dae"
+        <mesh filename="../meshes_new/z1_Link02.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -671,7 +671,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link03.dae"
+        <mesh filename="../meshes_new/z1_Link03.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -706,7 +706,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link04.dae"
+        <mesh filename="../meshes_new/z1_Link04.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -735,7 +735,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link05.dae"
+        <mesh filename="../meshes_new/z1_Link05.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -758,7 +758,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/z1_Link06.dae"
+        <mesh filename="../meshes_new/z1_Link06.stl"
           scale="1 1 1" />
       </geometry>
     </visual>
@@ -785,13 +785,13 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/z1_GripperStator.dae" scale="1 1 1"/>
+        <mesh filename="../meshes_new/z1_GripperStator.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/z1_GripperStator.dae" scale="1 1 1"/>
+        <mesh filename="../meshes_new/z1_GripperStator.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <!-- <collision>
@@ -818,13 +818,13 @@
     <visual>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/z1_GripperMover.dae" scale="1 1 1"/>
+        <mesh filename="../meshes_new/z1_GripperMover.stl" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="../meshes/z1_GripperMover.dae" scale="1 1 1"/>
+        <mesh filename="../meshes_new/z1_GripperMover.stl" scale="1 1 1"/>
       </geometry>
     </collision>
     <inertial>
