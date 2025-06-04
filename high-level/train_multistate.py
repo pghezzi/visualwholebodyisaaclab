@@ -1,6 +1,6 @@
-from isaacgym import gymapi
-from isaacgym import gymtorch
-from isaacgym.torch_utils import *
+from isaaclab import gymapi
+from isaaclab import gymtorch
+from isaaclab.torch_utils import *
 
 import numpy as np
 import torch
@@ -41,7 +41,7 @@ def create_env(cfg, args):
                          use_roboinfo=args.roboinfo, observe_gait_commands=args.observe_gait_commands, no_feature=args.no_feature, mask_arm=args.mask_arm, pitch_control=args.pitch_control,
                          rand_control=args.rand_control, arm_delay=args.arm_delay, robot_start_pose=robot_start_pose,
                          rand_cmd_scale=args.rand_cmd_scale, rand_depth_clip=args.rand_depth_clip, stop_pick=args.stop_pick, table_height=args.table_height, eval=args.eval)
-    wrapped_env = wrapper.IsaacGymPreview3Wrapper(_env)
+    wrapped_env = wrapper.IsaacLabWrapper(_env)
     return wrapped_env
 
 # define models (stochastic and deterministic models) using mixins

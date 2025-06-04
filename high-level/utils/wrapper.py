@@ -213,3 +213,51 @@ class RSLWrapper(Wrapper):
         """Close the environment
         """
         pass
+
+class IsaacLabWrapper(Wrapper):
+    def __init__(self, env: Any) -> None:
+        """Isaac Lab environment wrapper
+
+        :param env: The environment to wrap
+        :type env: Any supported Isaac Lab environment
+        """
+        super().__init__(env)
+
+        self._reset_once = True
+        self._obs_dict = None
+
+    def step(self, actions: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, Any]:
+        """Perform a step in the environment
+
+        :param actions: The actions to perform
+        :type actions: torch.Tensor
+
+        :return: Observation, reward, terminated, truncated, info
+        :rtype: tuple of torch.Tensor and any other info
+        """
+        self._obs_dict, reward, terminated, info = self._env.step(actions)
+        truncated = torch.zeros_like(terminated)
+        if self.num_states:
+            return self._obs_dict, reward.view(-1, 1), terminated.view(-1, 1), truncated.view(-1, 1), info
+        return self._obs_dict["obs"], reward.view(-1, 1), terminated.view(-1, 1), truncated.view(-1, 1), info
+
+    def reset(self) -> Tuple[torch.Tensor, Any]:
+        """Reset the environment
+
+        :return: Observation, info
+        :rtype: torch.Tensor and any other info
+        """
+        self._obs_dict = self._env.reset()
+        if self.num_states:
+            return self._obs_dict, {}
+        return self._obs_dict["obs"], {}
+
+    def render(self, *args, **kwargs) -> None:
+        """Render the environment
+        """
+        return self._env.render(*args, **kwargs)
+
+    def close(self) -> None:
+        """Close the environment
+        """
+        pass
