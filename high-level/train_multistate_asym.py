@@ -1,6 +1,6 @@
-from isaacgym import gymapi
-from isaacgym import gymtorch
-from isaacgym.torch_utils import *
+from isaaclab import gymapi
+from isaaclab import gymtorch
+from isaaclab.torch_utils import *
 
 import numpy as np
 import torch
@@ -218,7 +218,7 @@ def create_env(cfg, args, mode):
                          graphics_device_id=args.graphics_device_id, headless=args.headless, 
                          use_roboinfo=args.roboinfo, observe_gait_commands=args.observe_gait_commands, 
                          no_feature=args.no_feature, mask_arm=args.mask_arm, depth_random=args.depth_random, commands_curriculum=False)
-    wrapped_env = wrapper.IsaacGymPreview3Wrapper(_env)
+    wrapped_env = wrapper.IsaacLabWrapper(_env)
     return wrapped_env
 
 def get_trainer(is_eval=False):
