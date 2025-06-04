@@ -1,9 +1,9 @@
 try:
-    from isaacgym import gymapi
-    from isaacgym import gymtorch
-    from isaacgym.torch_utils import *
+    from isaaclab import gymapi
+    from isaaclab import gymtorch
+    from isaaclab.torch_utils import *
 except:
-    print("Cannot import isaacgym, works only for deployment")
+    print("Cannot import isaaclab, works only for deployment")
 
 import numpy as np
 import torch
