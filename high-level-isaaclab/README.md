@@ -4,7 +4,7 @@ This repository contains a migrated version of the MultiState environment from I
 
 ## Installation
 
-1. Install Isaac Lab following the [official installation guide](https://isaac-sim.github.io/IsaacLab/main/source/installation.html)
+1. Install Isaac Lab following the [official installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html)
 
 2. Install additional dependencies:
 ```bash
